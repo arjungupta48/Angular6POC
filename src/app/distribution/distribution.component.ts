@@ -27,7 +27,7 @@ export class DistributionComponent implements OnInit {
     }
 
     if(!(distributionParam == "")) {
-      // this.distributionSearch = this.distributions.filter(distributions.distributionId === parseInt(distributionParam));
+      this.distributionSearch = this.distributions.filter(distributions => distributions.distributionId === parseInt(distributionParam));
     }
     
     this.showHeader = true;
